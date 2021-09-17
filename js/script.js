@@ -58,9 +58,15 @@ function chatMsg() {
     if (j % 2 === 0) {
       var divEle = $('<div class = "bot-chat"></div>').text(data[j].message);
       $('.chats').append(divEle);
+      
+      var divEle = $('<div class = "bot-time"></div>').text(data[j].timeAgoStr);
+      $('.chats').append(divEle);
     }
     else {
       var divEle = $('<div class = "my-chat"></div>').text(data[j].message);
+      $('.chats').append(divEle);
+      
+      var divEle = $('<div class = "my-time"></div>').text(data[j].timeAgoStr);
       $('.chats').append(divEle);
     }
   }
@@ -78,6 +84,9 @@ $('.send-btn').click(function () {
     console.log(msgObj.message+" :Created At: " + msgObj.createdAt);
     
     var divEle = $('<div class = "my-chat"></div>').text(msgObj.message);
+    $('.chats').append(divEle);
+    
+    var divEle = $('<div class = "my-time"></div>').text(msgObj.timeAgoStr);
     $('.chats').append(divEle);
     
     $('input').val('');
