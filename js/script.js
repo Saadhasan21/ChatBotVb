@@ -55,7 +55,7 @@ for (var i = 0; i < messages.length; i++) {
 
 function chatMsg() {
   for (var j = 0; j < data.length; j++) {
-    if (j % 2 === 0) {
+    if (data[j].sender==='agent') {
       var divEle = $('<div class = "bot-chat"></div>').text(data[j].message);
       $('.chats').append(divEle);
 
