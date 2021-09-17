@@ -50,7 +50,15 @@ body {
     background-color: gray;
     padding: 7px 10px;
     border-radius: 10px 10px 10px 10px;
-    margin: 10px 0;
+}
+
+.bot-time{
+    width: 60%;
+    word-wrap: break-word;
+    color: lightgray;
+    padding-left: 7px;
+    border-radius: 10px 10px 10px 10px;
+    margin-top: 0px;
 }
 
 .my-chat {
@@ -58,6 +66,14 @@ body {
     word-wrap: break-word;
     background-color: darkblue;
     padding: 7px 10px;
+    border-radius: 10px 10px 10px 10px;
+    margin: 5px 0 5px auto;
+}
+
+.my-time{
+    width: 60%;
+    word-wrap: break-word;
+    color: lightgray;
     border-radius: 10px 10px 10px 10px;
     margin: 5px 0 5px auto;
 }
