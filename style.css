@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color:beige;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.chat-box {
+    width: 400px;
+    height: 450px;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+    border: 8px solid lightgrey;
+}
+
+
+/* chat section */
+
+.chats {
+    width: 100%;
+    padding: 0 15px;
+    color: white;
+    position: relative;
+    font-size: 0.9em;
+}
+
+.bot-chat {
+    width: 60%;
+    word-wrap: break-word;
+    background-color: gray;
+    padding: 7px 10px;
+    border-radius: 10px 10px 10px 10px;
+    margin: 10px 0;
+}
+
+.my-chat {
+    width: 60%;
+    word-wrap: break-word;
+    background-color: darkblue;
+    padding: 7px 10px;
+    border-radius: 10px 10px 10px 10px;
+    margin: 5px 0 5px auto;
+}
+
+
+/* input section */
+
+.chat-input {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 65px;
+    background-color: white;
+    padding: 15px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+}
+
+.chat-input input {
+    width: calc(100% - 40px);
+    height: 100%;
+    background-color:lightgrey;
+    border-radius: 50px;
+    color:black;
+    font-size: 1.2em;
+    padding: 0 15px;
+}
+
+.send-btn {
+    width: 40px;
+    height: 40px;
+    background-color: cyan;
+    overflow: hidden;
+    position: relative;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    border-radius: 15px;
+}
+
+ .send-btn:active {
+    transform: scale(0.85);
+}
